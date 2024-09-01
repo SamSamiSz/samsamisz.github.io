@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustafa Sami's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background: #495057;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 0;
+            padding: 0;
+            padding-left: 20px;
+            color: #495057;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #495057;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .highlight {
+            background-color: #e9ecef;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .theme-dark {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .theme-dark header, .theme-dark footer {
+            background-color: #212529;
+        }
+
+        .theme-dark section {
+            background-color: #495057;
+        }
+
+        .theme-dark ul {
+            color: #ffffff;
+        }
+
+        .theme-dark a {
+            color: #ffc107;
+        }
+
+        .theme-dark h2 {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mustafa Sami</h1>
+        <p>Software Developer Major</p>
+        <p>US Citizen | <a href="mailto:mustafasami20921@gmail.com">mustafasami20921@gmail.com</a> | +1 312 868 6227</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/linkedinAlias" target="_blank">linkedinAlias</a> | GitHub: <a href="https://github.com/githubUsername" target="_blank">githubUsername</a></p>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div>
+            <p><strong>DePaul University, Chicago, IL</strong><br>Bachelor of Software Engineering | Expected Graduation: May 2025</p>
+        </div>
+        <div>
+            <p><strong>Niles West High School, Skokie, IL</strong><br>High School Diploma | May 2021</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div>
+            <h3>Java Developer - TEKxagon Inc</h3>
+            <p><em>Jan 2024 to May 2024 | Chicago, IL</em></p>
+            <ul>
+                <li>Collaborated on the design and development of a new Java-based application, leading to a successful launch within a tight 4-month deadline.</li>
+                <li>Conducted code reviews and optimizations for ongoing projects, improving code quality and maintainability.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Logistics Technician - Advocate Lutheran General Hospital</h3>
+            <p><em>Jun 2023 to Current | Morton Grove, IL</em></p>
+            <ul>
+                <li>Provided critical logistical support by coordinating and fulfilling supply requests across multiple hospital departments, ensuring timely delivery of essential medical supplies.</li>
+                <li>Managed the organization and inventory of medical supplies in high-demand stock rooms, optimizing space utilization and ensuring quick access to critical items.</li>
+                <li>Operated and maintained the dumbwaiter system to efficiently distribute medical supplies to various departments, contributing to the smooth operation of hospital workflows.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Java, C, HTML, CSS, Python</li>
+            <li>Tools: VS Code, IntelliJ, JGrasp, Eclipse</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div>
+            <!-- Add your project details here -->
+        </div>
+    </section>
+
+    <section id="activities">
+        <h2>Activities and Leadership</h2>
+        <div>
+            <h3>Programming Peer Leader - NEIU College of Business and Technology</h3>
+            <p><em>Aug 2022 – Dec 2022</em></p>
+            <ul>
+                <li>Hosted office hours to assist students with Programming 101 assignments, providing guidance and support to help them complete their coursework successfully.</li>
+                <li>Collaborated with faculty to develop and deliver weekly workshops, enhancing students' understanding of key programming concepts.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Captain, Wrestling Team - Niles West High School</h3>
+            <p><em>2017, 2019, 2020</em></p>
+            <ul>
+                <li>Led the wrestling team as captain during freshman, junior, and senior years, fostering teamwork and discipline among team members.</li>
+                <li>Motivated and guided teammates to improve their performance, contributing to the team’s success in regional and state competitions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mustafa Sami. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to highlight sections on hover
+        document.querySelectorAll('section').forEach(section => {
+            section.addEventListener('mouseenter', () => {
+                section.classList.add('highlight');
+            });
+            section.addEventListener('mouseleave', () => {
+                section.classList.remove('highlight');
+            });
+        });
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle('theme-dark');
+        }
+
+        // Add a button for dark mode toggling (optional)
+        const darkModeButton = document.createElement('button');
+        darkModeButton.textContent = 'Toggle Dark Mode';
+        darkModeButton.style.position = 'fixed';
+        darkModeButton.style.bottom = '20px';
+        darkModeButton.style.right = '20px';
+        darkModeButton.style.padding = '10px';
+        darkModeButton.style.backgroundColor = '#007bff';
+        darkModeButton.style.color = '#ffffff';
+        darkModeButton.style.border = 'none';
+        darkModeButton.style.borderRadius = '5px';
+        darkModeButton.style.cursor = 'pointer';
+        document.body.appendChild(darkModeButton);
+
+        darkModeButton.addEventListener('click', toggleDarkMode);
+    </script>
+</body>
+</html>
