@@ -116,14 +116,25 @@
         <p>US Citizen | <a href="mailto:mustafasami20921@gmail.com">mustafasami20921@gmail.com</a> | +1 312 868 6227</p>
     </header>
     
-
+    
     <section id="education">
         <h2>Education</h2>
         <div>
-            <p><strong>DePaul University, Chicago, IL</strong><br>Bachelor of Software Engineering | Expected Graduation: May 2025</p>
+            <p><strong>DePaul University, Chicago, IL</strong>
+                <br>Bachelor of Software Engineering | Expected Graduation: May 2025</p>
+                <li>Current Cumulative GPA: 3.4</li>
+
         </div>
         <div>
+            <p><strong>Northeastern Illinois University, Chicago, IL</strong>
+                <br>Bachelor of Computer Science | Transfered to DePaul: May 2023</p>
+                <li> Cumulative GPA: 3.9</li>
+
+        </div>
+        
+        <div>
             <p><strong>Niles West High School, Skokie, IL</strong><br>High School Diploma | May 2021</p>
+            <li> Cumulative GPA: 3.65</li>
         </div>
     </section>
 
@@ -298,21 +309,32 @@
             document.body.classList.toggle('theme-dark');
         }
 
-        // Add a button for dark mode toggling (optional)
+        // Add a button for dark mode toggling
         const darkModeButton = document.createElement('button');
         darkModeButton.textContent = 'Toggle Dark Mode';
         darkModeButton.style.position = 'fixed';
-        darkModeButton.style.bottom = '20px';
-        darkModeButton.style.right = '20px';
+        darkModeButton.style.bottom = '10px';
+        darkModeButton.style.right = '10px';
         darkModeButton.style.padding = '10px';
         darkModeButton.style.backgroundColor = '#007bff';
         darkModeButton.style.color = '#ffffff';
         darkModeButton.style.border = 'none';
         darkModeButton.style.borderRadius = '5px';
         darkModeButton.style.cursor = 'pointer';
-        document.body.appendChild(darkModeButton);
 
         darkModeButton.addEventListener('click', toggleDarkMode);
+        document.body.appendChild(darkModeButton);
+        
+        document.querySelectorAll('section').forEach(section => {
+        section.addEventListener('mouseenter', () => {
+            section.classList.add('highlight'); // Add the 'highlight' class on hover
+        });
+
+        section.addEventListener('mouseleave', () => {
+            section.classList.remove('highlight'); // Remove the 'highlight' class when hover ends
+        });
+    });
+    
     </script>
 </body>
 </html>
